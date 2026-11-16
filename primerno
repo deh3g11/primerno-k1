@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Control</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-dark-subtle">
+    <div class="container-fluid">
+
+        <a class="navbar-brand order-2 order-lg-1"
+           href="#">Navbar</a>
+
+        <button class="navbar-toggler order-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-4 order-lg-2"
+             id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Features
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-check form-switch order-3 ms-lg-auto">
+            <input class="form-check-input"
+                   type="checkbox"
+                   role="switch"
+                   id="languageSwitch">
+
+            <label class="form-check-label"
+                   for="languageSwitch">
+                English / Bulgarian
+            </label>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- WELCOME SECTION -->
+<div class="bg-warning-subtle py-3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6">
+                <h1 class="fw-bold">
+                    Welcome to Our Website
+                </h1>
+
+                <ul class="list-group">
+                    <li class="list-group-item bg-warning">
+                        Discover Exciting Features
+                    </li>
+                    <li class="list-group-item bg-warning">
+                        Join Our Community
+                    </li>
+                    <li class="list-group-item bg-warning">
+                        Experience Innovation
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 text-center">
+                <img src="https://placehold.co/200x100"
+                     class="img-fluid"
+                     alt="Placeholder">
+
+                <div class="mt-3">
+                    <a href="#" class="btn btn-dark">
+                        Explore More
+                    </a>
+
+                    <a href="#" class="btn btn-outline-dark">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- CARD AND ACCORDION -->
+<div class="container mt-3">
+    <div class="row g-3">
+
+        <!-- CARD -->
+        <div class="col-12 col-lg-4">
+
+            <div class="card border-warning">
+
+                <div class="card-header bg-warning">
+                    Card 1
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Rem magni quas ex numquam.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="d-grid d-lg-block">
+                        <a href="#" class="btn btn-warning">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ACCORDION -->
+        <div class="col-12 col-lg-8">
+
+            <div class="accordion" id="accordionExample">
+
+                <!-- ITEM 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Heading Item 1
+                        </button>
+
+                    </h2>
+
+                    <div id="collapseOne"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionExample">
+
+                        <div class="accordion-body">
+                            <a href="#">
+                                Browse Collection
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ITEM 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo">
+                            Heading Item 2
+                        </button>
+
+                    </h2>
+
+                    <div id="collapseTwo"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample">
+
+                        <div class="accordion-body">
+                            <a href="#">
+                                Browse Collection
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ITEM 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree">
+                            Heading Item 3
+                        </button>
+
+                    </h2>
+
+                    <div id="collapseThree"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample">
+
+                        <div class="accordion-body">
+                            <a href="#">
+                                Browse Collection
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- TABLE AND SIGN IN -->
+<div class="container mt-3 mb-4">
+    <div class="row g-3">
+
+        <!-- TABLE -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+
+            <div class="card">
+                <div class="card-body">
+
+                    <h5>Check some data</h5>
+
+                    <div class="table-responsive">
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Last Price</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Apple Stock
+                                        <div>APL</div>
+                                    </td>
+                                    <td>$123.99</td>
+                                    <td class="text-success">
+                                        +12.64
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Apple Stock
+                                        <div>APL</div>
+                                    </td>
+                                    <td>$123.99</td>
+                                    <td class="text-danger">
+                                        -14.53
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Apple Stock
+                                        <div>APL</div>
+                                    </td>
+                                    <td>$123.99</td>
+                                    <td class="text-danger">
+                                        -12.64
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <a href="#">Show all</a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SIGN IN -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+
+            <h5>Sign In</h5>
+
+            <form>
+
+                <div class="mb-3">
+                    <label for="email"
+                           class="form-label">
+                        Email address
+                    </label>
+
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           placeholder="Enter email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="password"
+                           class="form-label">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           class="form-control"
+                           id="password"
+                           placeholder="Password">
+                </div>
+
+                <button type="submit"
+                        class="btn btn-success">
+                    Submit
+                </button>
+
+                <button type="reset"
+                        class="btn btn-outline-danger">
+                    Cancel
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
